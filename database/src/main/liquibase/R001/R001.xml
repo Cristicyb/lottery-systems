@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+				   
+	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/ddl/sch.sql">
+		<sqlFile path="src/main/liquibase/R001/ddl/sch.sql"/>
+	</changeSet>
+
+	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/ddl/sch_det.sql">
+		<sqlFile path="src/main/liquibase/R001/ddl/sch_det.sql"/>
+	</changeSet>
+	
+	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/ddl/lt.sql">
+		<sqlFile path="src/main/liquibase/R001/ddl/lt.sql"/>
+	</changeSet>
+
+	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/views/lt_v.sql">
+		<sqlFile path="src/main/liquibase/R001/views/lt_v.sql"/>
+	</changeSet>
+	
+	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/dml/5_5_8.sql">
+		<sqlFile path="src/main/liquibase/R001/dml/5_5_8.sql"/>
+	</changeSet>
+	
+	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/dml/4_4_9.sql">
+		<sqlFile path="src/main/liquibase/R001/dml/4_4_9.sql"/>
+	</changeSet>
+
+	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/dml/4_4_8.sql">
+		<sqlFile path="src/main/liquibase/R001/dml/4_4_8.sql"/>
+	</changeSet>
+
+	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/dml/4_4_10.sql">
+		<sqlFile path="src/main/liquibase/R001/dml/4_4_10.sql"/>
+	</changeSet>
+
+	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/dml/3_3_12.sql">
+		<sqlFile path="src/main/liquibase/R001/dml/3_3_12.sql" endDelimiter="/"/>
+	</changeSet>
+	
+	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/packages/gen_bilet_pkgs.sql">
+		<sqlFile path="src/main/liquibase/R001/packages/gen_bilet_pkgs.sql" endDelimiter="/"/>
+	</changeSet>
+	
+	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/packages/gen_bilet_pkgb.sql">
+		<sqlFile path="src/main/liquibase/R001/packages/gen_bilet_pkgb.sql" endDelimiter="/"/>
+	</changeSet>
+	
+</databaseChangeLog>
