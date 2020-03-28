@@ -1,13 +1,23 @@
 CREATE OR REPLACE PACKAGE LTSYS.GEN_BILET_PKG AS 
 
-PROCEDURE GEN_BILET_5_5_8;
+PROCEDURE GEN_BILET_8_NR_JUCATE
+  (
+    p_cod_sch ltsys.sch.cod%type
+  );
 
-PROCEDURE GEN_BILET_4_4_9;
+PROCEDURE GEN_BILET_9_NR_JUCATE
+  (
+    p_cod_sch ltsys.sch.cod%type
+  );
 
-PROCEDURE GEN_BILET_4_4_8;
+PROCEDURE GEN_BILET_10_NR_JUCATE
+  (
+    p_cod_sch ltsys.sch.cod%type
+  );
 
-PROCEDURE GEN_BILET_4_4_10;
-
-PROCEDURE GEN_BILET_3_3_12;
+PROCEDURE GEN_BILET_12_NR_JUCATE
+  (
+    p_cod_sch ltsys.sch.cod%type
+  );
 
 END GEN_BILET_PKG;

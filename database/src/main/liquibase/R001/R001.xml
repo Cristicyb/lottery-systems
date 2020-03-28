@@ -37,15 +37,35 @@
 	</changeSet>
 
 	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/dml/3_3_12.sql">
-		<sqlFile path="src/main/liquibase/R001/dml/3_3_12.sql" endDelimiter="/"/>
+		<sqlFile path="src/main/liquibase/R001/dml/3_3_12.sql"/>
 	</changeSet>
 	
-	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/packages/gen_bilet_pkgs.sql">
+	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/dml/5_6_8.sql">
+		<sqlFile path="src/main/liquibase/R001/dml/5_6_8.sql"/>
+	</changeSet>
+	
+	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/dml/5_6_9.sql">
+		<sqlFile path="src/main/liquibase/R001/dml/5_6_9.sql"/>
+	</changeSet>
+	
+	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/dml/5_6_10.sql">
+		<sqlFile path="src/main/liquibase/R001/dml/5_6_10.sql"/>
+	</changeSet>
+	
+	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/packages/gen_bilet_pkgs.sql" runOnChange="true">
 		<sqlFile path="src/main/liquibase/R001/packages/gen_bilet_pkgs.sql" endDelimiter="/"/>
 	</changeSet>
 	
-	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/packages/gen_bilet_pkgb.sql">
+	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/packages/gen_bilet_pkgb.sql" runOnChange="true">
 		<sqlFile path="src/main/liquibase/R001/packages/gen_bilet_pkgb.sql" endDelimiter="/"/>
+	</changeSet>
+	
+	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/packages/verif_bilet_pkgs.sql" runOnChange="true">
+		<sqlFile path="src/main/liquibase/R001/packages/verif_bilet_pkgs.sql" endDelimiter="/"/>
+	</changeSet>
+	
+	<changeSet id="R001" author="cristian.potcovaru" logicalFilePath="src/main/liquibase/R001/packages/verif_bilet_pkgb.sql" runOnChange="true">
+		<sqlFile path="src/main/liquibase/R001/packages/verif_bilet_pkgb.sql" endDelimiter="/"/>
 	</changeSet>
 	
 </databaseChangeLog>
