@@ -30,13 +30,14 @@ begin
            sch b
      where a.id_extr = p_id_extr
        and a.id_sch = b.id_sch
-	   and a.id_bilet is null
-       and b.cod like '3%';
+	   and a.id_bilet is null;
   exception
     when no_data_found then
 	  raise e_err;
   end;
+  dbms_output.put_line('=================================');
   dbms_output.put_line('sistem: ' || v_sch_row.denumire);
+  dbms_output.put_line('se castiga cu 3 numere');
   dbms_output.put_line('bilete verificate: ' || p_nr_bilete);
   select nvl(max(t.id_extr),0) + 1 into v_id_extr from lt t;
   v_tmp_lt_r := null;
@@ -267,13 +268,14 @@ begin
            sch b
      where a.id_extr = p_id_extr
        and a.id_sch = b.id_sch
-	   and a.id_bilet is null
-       and b.cod like '4%';
+	   and a.id_bilet is null;
   exception
     when no_data_found then
 	  raise e_err;
   end;
+  dbms_output.put_line('=================================');
   dbms_output.put_line('sistem: ' || v_sch_row.denumire);
+  dbms_output.put_line('se castiga cu 4 numere');
   dbms_output.put_line('bilete verificate: ' || p_nr_bilete);
   select nvl(max(t.id_extr),0) + 1 into v_id_extr from lt t;
   v_tmp_lt_r := null;
@@ -490,17 +492,18 @@ begin
   begin
     select b.*
       into v_sch_row
-      from lt a,
+      from lt a,	
            sch b
      where a.id_extr = p_id_extr
        and a.id_sch = b.id_sch
-	   and a.id_bilet is null
-       and b.cod like '5%';
+	   and a.id_bilet is null;
   exception
     when no_data_found then
 	  raise e_err;
   end;
+  dbms_output.put_line('=================================');
   dbms_output.put_line('sistem: ' || v_sch_row.denumire);
+  dbms_output.put_line('se castiga cu 5 numere');
   dbms_output.put_line('bilete verificate: ' || p_nr_bilete);
   select nvl(max(t.id_extr),0) + 1 into v_id_extr from lt t;
   v_tmp_lt_r := null;
