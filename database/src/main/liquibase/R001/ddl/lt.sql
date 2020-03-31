@@ -16,5 +16,5 @@ create table ltsys.lt
   nr11 integer,
   nr12 integer
 );
-create index lt_id_extr_idx on ltsys.lt(id_extr);
-create index lt_id_sch_idx on ltsys.lt(id_sch);
+create index ltsys.lt_id_extr_idx on ltsys.lt(id_extr);
+create index ltsys.lt_id_sch_idx on ltsys.lt(id_sch);
